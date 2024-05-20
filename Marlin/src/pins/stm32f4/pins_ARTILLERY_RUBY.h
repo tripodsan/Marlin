@@ -37,6 +37,10 @@
 
 #define HAL_TIMER_RATE                     F_CPU
 
+#if ANY(BLTOUCH, TOUCH_MI_PROBE, BIQU_MICROPROBE_V1, BIQU_MICROPROBE_V2)
+  #define INVERTED_PROBE_STATE
+#endif
+
 //
 // Limit Switches
 //
